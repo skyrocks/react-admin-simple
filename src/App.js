@@ -1,4 +1,12 @@
-import logo from './logo.svg';
+/*
+ * @Author: shilei
+ * @Date: 2021-01-06 15:45:56
+ * @LastEditors: shilei
+ * @LastEditTime: 2021-01-06 16:08:20
+ * @Description: 这是一个什么文件...
+ * @FilePath: /react04/src/App.js
+ */
+import logo from './assets/logo.svg';
 import './App.css';
 
 function App() {
