@@ -2,15 +2,16 @@
  * @Author: shilei
  * @Date: 2021-01-07 15:18:33
  * @LastEditors: shilei
- * @LastEditTime: 2021-01-08 00:56:54
+ * @LastEditTime: 2021-01-08 23:40:46
  * @Description: 这是一个什么文件...
  * @FilePath: /react04/src/pages/login/index.js
  */
 import React, { Component } from 'react'
 import { Row, Col, Form, Input, Button, Checkbox } from 'antd';
+import { withRouter } from 'react-router-dom'
 import { connect, Provider } from 'react-redux'
-import { mapStateToProps, mapDispatchToProps } from '../../store/login'
-import store from '../../store/login'
+import { login } from '../../store/login.reducer'
+import store from '../../store'
 
 const layout = {
   labelCol: { span: 8 },
@@ -20,14 +21,16 @@ const tailLayout = {
   wrapperCol: { offset: 8, span: 16 },
 };
 
-@connect(mapStateToProps, mapDispatchToProps)
+@withRouter
+@connect(
+  state => ({ ...state.login }),
+  {login})
 class Login extends Component {
-
   onFinish = (values) => {
-    console.log(this.props.isLogin);
-    this.props.login();
-    console.log(this.props.isLogin);
-    console.log('Success:', values);
+    this.props.login(() => {
+      console.log(`1s after ${this.props.isLogin}`);
+      this.props.history.push('/');
+    });
   };
 
   onFinishFailed = (errorInfo) => {
@@ -79,14 +82,10 @@ class Login extends Component {
   }
 }
 
-
-// eslint-disable-next-line import/no-anonymous-default-export
-export default class extends Component {
-  render() {
-    return (
-      <Provider store={store}>
+export default function LoginProvider() {  
+  return (
+    <Provider store={store}>
         <Login/>
-      </Provider>  
-    )
-  }
+    </Provider>  
+  );
 }
