@@ -1,11 +1,3 @@
-/*
- * @Author: shilei
- * @Date: 2021-01-08 10:13:43
- * @LastEditors: shilei
- * @LastEditTime: 2021-01-08 15:44:16
- * @Description: 这是一个什么文件...
- * @FilePath: /react04/src/utils/request.js
- */
 import axios from 'axios'
 import { cloneDeep } from 'lodash'
 import { message } from 'antd'

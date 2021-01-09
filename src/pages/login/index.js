@@ -1,11 +1,3 @@
-/*
- * @Author: shilei
- * @Date: 2021-01-07 15:18:33
- * @LastEditors: shilei
- * @LastEditTime: 2021-01-08 23:40:46
- * @Description: 这是一个什么文件...
- * @FilePath: /react04/src/pages/login/index.js
- */
 import React, { Component } from 'react'
 import { Row, Col, Form, Input, Button, Checkbox } from 'antd';
 import { withRouter } from 'react-router-dom'

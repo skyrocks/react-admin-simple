@@ -1,11 +1,3 @@
-/*
- * @Author: shilei
- * @Date: 2021-01-08 00:35:33
- * @LastEditors: shilei
- * @LastEditTime: 2021-01-08 15:33:12
- * @Description: 这是一个什么文件...
- * @FilePath: /react04/config-overrides.js
- */
 const {
   override,
   fixBabelImports,

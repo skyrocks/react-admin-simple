@@ -1,11 +1,3 @@
-/*
- * @Author: shilei
- * @Date: 2021-01-06 23:08:59
- * @LastEditors: shilei
- * @LastEditTime: 2021-01-08 13:54:13
- * @Description: 这是一个什么文件...
- * @FilePath: /react04/src/layouts/Frame.js
- */
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { RenderRoutes } from "../routes/allocation";

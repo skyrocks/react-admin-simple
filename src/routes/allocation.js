@@ -1,12 +1,3 @@
-/*
- * @Author: shilei
- * @Date: 2021-01-07 15:48:45
- * @LastEditors: shilei
- * @LastEditTime: 2021-01-08 23:39:02
- * @Description: 这是一个什么文件...
- * @FilePath: /react04/src/routes/allocation.js
- */
-
 import React, { Component } from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 import { connect, Provider } from 'react-redux'

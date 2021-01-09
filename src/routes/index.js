@@ -1,11 +1,3 @@
-/*
- * @Author: shilei
- * @Date: 2021-01-07 15:47:25
- * @LastEditors: shilei
- * @LastEditTime: 2021-01-07 23:03:38
- * @Description: 这是一个什么文件...
- * @FilePath: /react04/src/routes/index.js
- */
 import Login from '../pages/login'
 import Frame from '../layouts/Frame'
 import Dashboard from "../pages/dashboard";
