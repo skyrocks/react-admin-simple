@@ -1,6 +1,6 @@
 # react-admin-simple
 
-一个React项目, 项目结构极简, 基于Antd+Redux+Router+Axios实现, 适用于新手学习和一些简单项目的使用.
+一个React项目, 项目结构极简, 基于Antd+Redux+Router+Axios实现, redux异步方案采用redux-thunk, 适用于新手学习和一些简单项目的使用.
 
 ## 项目依赖
 ```
